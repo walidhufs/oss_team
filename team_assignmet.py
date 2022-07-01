@@ -3,9 +3,9 @@ import numpy as np
 
 
 
-students = ['조민식']
+students = ['이혜미']
 
-teams_fixed = [['조민식'], ['김동한']]
+teams_fixed = []
 
 teams_fixed_backup = list(teams_fixed)
 
