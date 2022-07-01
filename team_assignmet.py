@@ -1,13 +1,6 @@
 import numpy as np
 
-<<<<<<< HEAD
-students = ['오현택', '전승원', '백동렬']
-=======
->>>>>>> origin/main
-
-
-
-students = ['조민식']
+students = ['오현택', '전승원', '백동렬', '조민식']
 
 teams_fixed = [['조민식'], ['김동한']]
 
@@ -52,8 +45,4 @@ while True:
         break
 
 for t in teams:
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
     print(t)
