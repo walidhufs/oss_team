@@ -1,8 +1,11 @@
 import numpy as np
 
-students = ['오현택', '전승원', '백동렬', '조민식']
+students = ['오현택', '전승원','조성현', '신혜지', '이기욱', '백동렬']
 
-teams_fixed = [['조민식'], ['김동한']]
+
+students = ['이혜미']
+
+teams_fixed = []
 
 teams_fixed_backup = list(teams_fixed)
 
@@ -31,15 +34,20 @@ while True:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
-        
-        if not exist: 
+        exist = False
+        for t in teams:
+            if name in t:
+                exist = True
+                break
+
+        if not exist:
             team.append(name)
             members += 1
         id = id+1
         if id >= len(shuffle_idx):
             to_break = True
             break
-    
+
     teams.append(team)
     if to_break:
         break
