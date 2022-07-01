@@ -1,7 +1,7 @@
 import numpy as np
 
 
-students = ['오현택', '전승원', '신혜지']
+students = ['오현택', '전승원','조성현', '신혜지']
 
 teams_fixed = [['전승원', '양정윤']]
 teams_fixed_backup = list(teams_fixed)
