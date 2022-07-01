@@ -3,17 +3,21 @@ import numpy as np
 students = ['백동렬']
 
 teams = []
+students = []
+
+teams = [['']]
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
 print(shuffle_idx)
 
 # number of students/team
-n = 2
+n = 3
 
 # team_assignment
 id = 0
 to_break = False
+
 while True:
     team = []
     members = 0
@@ -41,5 +45,3 @@ while True:
 
 for t in teams:
     print(t)
-        
- 
