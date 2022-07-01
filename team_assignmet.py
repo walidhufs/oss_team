@@ -17,7 +17,7 @@ to_break = False
 while True:
     team = []
     members = 0
-    while members<2:
+    while members<n:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
