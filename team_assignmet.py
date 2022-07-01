@@ -7,6 +7,7 @@ teams = [['name1', 'name4']]
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
 print(shuffle_idx)
+
 # number of students/team
 n = 2
 
@@ -16,8 +17,8 @@ to_break = False
 while True:
     team = []
     members = 0
-    while members<2:
-        shuffle_id = shuffle_idx[id+i]
+    while members<n:
+        shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
         exist = False
@@ -26,13 +27,17 @@ while True:
                 exist = True
                 break
         
-        if not exist:
+        if not exist: 
             team.append(name)
             members += 1
         id = id+1
         if id >= len(shuffle_idx):
             to_break = True
             break
+    
     teams.append(team)
     if to_break:
         break
+
+for t in teams:
+    print(t)
