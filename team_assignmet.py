@@ -3,8 +3,13 @@ import numpy as np
 
 students = ['오현택', '전승원','조성현', '신혜지', '이기욱']
 
-teams_fixed = [['전승원', '양정윤']]
+
+students = ['조민식']
+
+teams_fixed = [['조민식'], ['김동한']]
+
 teams_fixed_backup = list(teams_fixed)
+
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
@@ -30,7 +35,6 @@ while True:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
-<<<<<<< HEAD
         exist = False
         for t in teams:
             if name in t:
@@ -38,10 +42,6 @@ while True:
                 break
 
         if not exist:
-=======
-
-        if not exist:
->>>>>>> origin/main
             team.append(name)
             members += 1
         id = id+1
@@ -56,6 +56,5 @@ while True:
 for t in teams:
 <<<<<<< HEAD
 
-=======
 >>>>>>> origin/main
     print(t)
