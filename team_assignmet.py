@@ -1,19 +1,26 @@
 import numpy as np
 
+<<<<<<< HEAD
 students = ['오현택']
 
 teams = []
+=======
+students = []
+
+teams = [['']]
+>>>>>>> origin/main
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
 print(shuffle_idx)
 
 # number of students/team
-n = 2
+n = 3
 
 # team_assignment
 id = 0
 to_break = False
+
 while True:
     team = []
     members = 0
@@ -40,4 +47,10 @@ while True:
         break
 
 for t in teams:
+<<<<<<< HEAD
     print(t)
+=======
+    print(t)
+        
+
+>>>>>>> origin/main
