@@ -3,11 +3,10 @@ import numpy as np
 
 
 
+students = ['오현택', '전승원','조성현', '신혜지', '이기욱', '백동렬', '문성민','이혜미', '양정윤', '김동한']
 
-students = ['오현택', '전승원','조성현', '신혜지', '이기욱', '백동렬', '문성민','이혜미', '양정윤']
 
-
-teams_fixed = []
+teams_fixed = [['김동한', '조민식']]
 
 teams_fixed_backup = list(teams_fixed)
 
