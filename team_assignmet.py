@@ -2,10 +2,8 @@ import numpy as np
 
 students = ['백동렬']
 
-teams = []
-students = []
-
-teams = [['']]
+teams_fixed=[['name1'], ['name3']]
+teams_fixed_bckup=list(teams_fixed)
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
