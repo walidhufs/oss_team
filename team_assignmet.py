@@ -1,8 +1,10 @@
 import numpy as np
 
-students = ['이기욱']
+students = ['오현택', '이기욱']
+
 
 teams = [['']]
+>>>>>>> origin/main
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
@@ -41,4 +43,5 @@ while True:
         break
 
 for t in teams:
+
     print(t)
