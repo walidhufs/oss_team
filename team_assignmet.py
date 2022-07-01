@@ -2,7 +2,6 @@ import numpy as np
 
 students = ['오현택', '이기욱']
 
-
 teams = [['']]
 >>>>>>> origin/main
 
