@@ -1,6 +1,6 @@
 import numpy as np
 
-students = ['name1', 'name2', 'name3', 'name4', 'name5', 'name6']
+students = ['오현택']
 
 teams_fixed = [['name1'], ['name3']]
 teams_fixed_backup = list(teams_fixed)
@@ -15,7 +15,9 @@ n = 3
 # team_assignment
 id = 0
 to_break = False
+
 teams = []
+
 while True:
     team = []
     members = 0
@@ -47,4 +49,4 @@ while True:
 
 for t in teams:
     print(t)
-        
+
