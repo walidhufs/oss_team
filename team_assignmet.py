@@ -1,28 +1,36 @@
 import numpy as np
 
-students = ['조성현']
+students = ['오현택', '전승원','조성현']
 
-teams = []
+teams_fixed = [['전승원', '양정윤']]
+teams_fixed_backup = list(teams_fixed)
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
 print(shuffle_idx)
 
 # number of students/team
-n = 2
+n = 3
 
 # team_assignment
 id = 0
 to_break = False
+
+teams = []
+
 while True:
     team = []
     members = 0
+    if len(teams_fixed)>0:
+        team = teams_fixed.pop()
+        members = len(team)
+
     while members<n:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
         exist = False
-        for t in teams:
+        for t in teams_fixed_backup:
             if name in t:
                 exist = True
                 break
@@ -41,5 +49,4 @@ while True:
 
 for t in teams:
     print(t)
-        
- 
+
