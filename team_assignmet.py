@@ -1,8 +1,8 @@
 import numpy as np
 
-students = ['오현택']
+students = ['오현택', '전승원']
 
-teams_fixed = [['name1'], ['name3']]
+teams_fixed = [['전승원', '양정윤']]
 teams_fixed_backup = list(teams_fixed)
 
 # shuffle students with a specific random seed
