@@ -1,9 +1,10 @@
 import numpy as np
 
-students = ['오현택', '이기욱']
 
-teams = [['']]
->>>>>>> origin/main
+students = ['오현택', '전승원','조성현', '신혜지', '이기욱']
+
+teams_fixed = [['전승원', '양정윤']]
+teams_fixed_backup = list(teams_fixed)
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
@@ -16,9 +17,15 @@ n = 3
 id = 0
 to_break = False
 
+teams = []
+
 while True:
     team = []
     members = 0
+    if len(teams_fixed)>0:
+        team = teams_fixed.pop()
+        members = len(team)
+
     while members<n:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
