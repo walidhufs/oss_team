@@ -1,6 +1,6 @@
 import numpy as np
 
-students = []
+students = ['이기욱']
 
 teams = [['']]
 
@@ -27,20 +27,18 @@ while True:
             if name in t:
                 exist = True
                 break
-        
-        if not exist: 
+
+        if not exist:
             team.append(name)
             members += 1
         id = id+1
         if id >= len(shuffle_idx):
             to_break = True
             break
-    
+
     teams.append(team)
     if to_break:
         break
 
 for t in teams:
     print(t)
-        
-
