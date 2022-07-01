@@ -1,7 +1,10 @@
 import numpy as np
 
 
-students = ['오현택', '전승원','조성현', '신혜지', '이기욱', '문성민']
+
+
+
+students = ['오현택', '전승원','조성현', '신혜지', '이기욱', '백동렬', '문성민']
 
 
 students = ['이혜미']
@@ -54,7 +57,4 @@ while True:
         break
 
 for t in teams:
-<<<<<<< HEAD
-
->>>>>>> origin/main
     print(t)
