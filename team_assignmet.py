@@ -1,8 +1,8 @@
 import numpy as np
 
-students = ['name1', 'name2', 'name3', 'name4', 'name5', 'name6']
+students = ['백동렬']
 
-teams = [['name1', 'name4']]
+teams = []
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
