@@ -30,6 +30,7 @@ while True:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
+<<<<<<< HEAD
         exist = False
         for t in teams:
             if name in t:
@@ -37,6 +38,10 @@ while True:
                 break
 
         if not exist:
+=======
+
+        if not exist:
+>>>>>>> origin/main
             team.append(name)
             members += 1
         id = id+1
@@ -49,5 +54,8 @@ while True:
         break
 
 for t in teams:
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
     print(t)
