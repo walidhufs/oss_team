@@ -2,6 +2,7 @@ import numpy as np
 
 
 
+
 students = ['조민식']
 
 teams_fixed = [['조민식'], ['김동한']]
@@ -33,11 +34,6 @@ while True:
         shuffle_id = shuffle_idx[id]
         name = students[shuffle_id]
         # check if this name already included in other teams
-        exist = False
-        for t in teams_fixed_backup:
-            if name in t:
-                exist = True
-                break
         
         if not exist: 
             team.append(name)
@@ -54,6 +50,3 @@ while True:
 for t in teams:
 
     print(t)
-
-
- 
