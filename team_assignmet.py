@@ -1,11 +1,13 @@
 import numpy as np
 
 
+
 students = ['조민식']
 
 teams_fixed = [['조민식'], ['김동한']]
+
 teams_fixed_backup = list(teams_fixed)
->>>>>>> origin/main
+
 
 # shuffle students with a specific random seed
 shuffle_idx = np.random.permutation(len(students))
