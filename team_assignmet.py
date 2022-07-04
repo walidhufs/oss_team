@@ -49,5 +49,12 @@ while True:
     if to_break:
         break
 
+captains=[]
+captains.append('') # Team-1
+captains.append('') # Team-2
+captains.append('') # Team-3
+captains.append('') # Team-4
+captains.append('') # Team-5
+
 for t in range(len(teams)):
     print('Team #{}: {}'.format(t+1, teams[t]))
