@@ -54,7 +54,7 @@ while True:
 captains=[]
 captains.append('') # Team-1
 captains.append('') # Team-2
-captains.append('') # Team-3
+captains.append('최동근') # Team-3
 captains.append('') # Team-4
 captains.append('') # Team-5
 
