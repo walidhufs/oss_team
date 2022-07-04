@@ -56,7 +56,7 @@ while True:
         break
 
 captains=[]
-captains.append('') # Team-1
+captains.append('전승원') # Team-1
 captains.append('') # Team-2
 captains.append('') # Team-3
 captains.append('') # Team-4
