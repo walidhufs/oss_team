@@ -36,7 +36,7 @@ while True:
             if name in t:
                 exist = True
                 break
-        
+
         if not exist:
             team.append(name)
             members += 1
