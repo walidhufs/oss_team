@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import os
+os.system('chcp 949')
+
 import numpy as np
 
 
