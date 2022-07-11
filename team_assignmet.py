@@ -64,3 +64,11 @@ captains.append('') # Team-5
 
 for t in range(len(teams)):
     print('Team #{}: {}'.format(t+1, teams[t]))
+    
+    
+# presentation order
+np.random.seed(55) # randomly generated
+arr = np.arange(1,5+1)
+arr = np.random.permutation(arr)
+for t in arr:
+    print('Team #{}'.format(t))
