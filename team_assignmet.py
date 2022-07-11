@@ -67,6 +67,7 @@ for t in range(len(teams)):
     
     
 # presentation order
+print("presentation order")
 np.random.seed(55) # randomly generated
 arr = np.arange(1,5+1)
 arr = np.random.permutation(arr)
